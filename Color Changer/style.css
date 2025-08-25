@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.nav{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(206, 206, 206);
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+main{
+    padding: 15px;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+main h2{
+    font-size: 3rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+main span{
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#red{
+    background-color: red;
+}
+
+#orange{
+    background-color: orange;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#color-name{
+    padding-top: 50px;
+    text-transform: capitalize;
+}
