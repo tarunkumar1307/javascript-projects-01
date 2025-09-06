@@ -26,3 +26,71 @@ body{
     border-radius: 4px;
     padding: 8px 16px;
 }
+
+.main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.info{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#guessLabel{
+    font-size: 2rem;
+}
+
+#guessInput{
+    text-align: center;
+}
+
+.form-group input{
+    padding: 10px 20px;
+}
+
+#submit{
+    font-size: 1rem;
+    background-color: rgb(64, 60, 151);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: rgb(62, 56, 118);
+}
+
+.game-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#newGame{
+    font-size: 1rem;
+    background-color: rgb(64, 60, 151);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#newGame:hover {
+    background-color: rgb(62, 56, 118);
+}

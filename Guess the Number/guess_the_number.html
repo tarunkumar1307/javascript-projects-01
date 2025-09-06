@@ -11,5 +11,25 @@
         <a href="/index.html"> Home </a>
     </nav>
     <hr>
+    <div class="main">
+        <h1>Number Guessing Game</h1>
+        <div>
+            <div class="info">
+                <h3>Try and Guess a random number between 1 and 100.</h3>
+                <h3>You have 10 attempts to guess the right answer.</h3>
+            </div>
+            <form class="form-group">
+                <label for="guessInput" id="guessLabel">Guess a Number</label>
+                <input type="text" id="guessInput">
+                <input type="submit" value="Submit" id="submit">
+            </form>
+            <div class="game-details">
+                <h3> Previous Guess : <span class="previous-guessess"></span></h3>
+                <h3> Guessess Remaining: <span class="guessess-remaining"> 10 </span></h3>
+                <h3 class="lowOrHigh"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
