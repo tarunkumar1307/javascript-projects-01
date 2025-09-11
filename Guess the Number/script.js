@@ -12,7 +12,7 @@ let numGuess = 1;
 
 
 let playGame = true;
-
+console.log(randomNumber);
 const p = document.createElement('p');
 
 
@@ -40,12 +40,15 @@ function validateGuess(guess){
     }
     else{
         prevGuess.push(guess);
-        if((numGuess) === 10){
-            displayGuess(guess);
+        displayGuess(guess);
+
+        if (guess === randomNumber) {
+            displayMessage(`You guessed it right.`);
+            endGame();
+        } else if (numGuess > 10) {
             displayMessage(`Game Over. Random Number was ${randomNumber}`);
             endGame();
-        }else{
-            displayGuess(guess);
+        } else {
             checkGuess(guess);
         }
     }
@@ -66,7 +69,7 @@ function displayGuess(guess){
     userInput.value = '';
     previousGuessess.innerHTML += `${guess} `;
     numGuess++;
-    remainingGuessess.innerHTML = `${(10-numGuess)+1}`
+    remainingGuessess.innerHTML = `${(10 - numGuess) + 1}`;
 }
 
 function displayMessage(message){
